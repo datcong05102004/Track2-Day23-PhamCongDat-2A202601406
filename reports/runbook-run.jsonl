@@ -1,0 +1,7 @@
+{"ts": 1787653761.8883443, "iso": "2026-08-25T10:29:21", "step": 1, "name": "xac_nhan_outage", "primary": "a", "target": "b", "confirmed": true, "probes": [{"attempt": 1, "ready": false, "reason": "ReadTimeout"}, {"attempt": 2, "ready": false, "reason": "ReadTimeout"}, {"attempt": 3, "ready": false, "reason": "ReadTimeout"}], "target_alive": true}
+{"ts": 1787653761.9048266, "iso": "2026-08-25T10:29:21", "step": 2, "name": "thong_bao_incident", "primary": "a", "severity": "SEV-1", "t_outage": 1787653748.8894255, "t_outage_iso": "2026-08-25T10:29:08"}
+{"ts": 1787653769.1040576, "iso": "2026-08-25T10:29:29", "step": 3, "name": "scale_gpu_pool", "target": "b", "failover_ok": true, "failed_step": null}
+{"ts": 1787653769.1040576, "iso": "2026-08-25T10:29:29", "step": 4, "name": "verify_state_replica", "target": "b", "ok": true, "vector_count": 230, "weights": true, "pool_state": "full"}
+{"ts": 1787653769.1040576, "iso": "2026-08-25T10:29:29", "step": 5, "name": "dns_cutover", "target": "b", "ok": true, "active_region": "b"}
+{"ts": 1787653772.1209207, "iso": "2026-08-25T10:29:32", "step": 6, "name": "verify_golden_signals", "target": "b", "ok": true, "requests": 10, "p95_ms": 344.0, "error_rate": 0.0, "thresholds": {"p95_ms": 1000, "error_rate": 0}}
+{"ts": 1787653772.1209207, "iso": "2026-08-25T10:29:32", "step": 7, "name": "post_incident", "ok": true, "elapsed_s": 22.88, "measure_command": "python tools/measure_rto.py --loadgen reports/drill-2-withdr.jsonl --target-rto 300"}

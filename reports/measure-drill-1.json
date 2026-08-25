@@ -1,0 +1,16 @@
+{
+  "valid": true,
+  "invalid_reasons": [],
+  "killed_region": "a",
+  "recovered_by_region": null,
+  "t_outage_iso": "2026-08-25T10:21:49",
+  "chaos_mode": "netblock",
+  "rto_measured_s": null,
+  "rto_target_s": 300.0,
+  "rto_verdict": "NO_RECOVERY",
+  "requests_failed": 14,
+  "evidence": {
+    "loadgen": "reports/drill-1-nodr.jsonl",
+    "chaos": "chaos/chaos-events.jsonl"
+  }
+}

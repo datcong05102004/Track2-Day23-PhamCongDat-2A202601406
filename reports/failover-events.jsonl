@@ -1,0 +1,49 @@
+{"ts": 1787653762.2212267, "iso": "2026-08-25T10:29:22", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm", "weights": false, "count": 0, "latest_doc_ts": null, "ts": 1787653762.2212267}}
+{"ts": 1787653762.238012, "iso": "2026-08-25T10:29:22", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787653762.0496774, "restored_at": 1787653762.238012, "rpo_seconds": 2.0, "docs_lost": 1, "embed_model_version": "embed-model=vi-e5-base@v3"}
+{"ts": 1787653762.238012, "iso": "2026-08-25T10:29:22", "step": "3_scale_pool", "target": "b", "from_state": "warm", "to_state": "full"}
+{"ts": 1787653769.1040576, "iso": "2026-08-25T10:29:29", "step": "4_wait_ready", "target": "b", "ok": true, "waited_s": 6.86, "state": {"region": "b", "pool_state": "full", "weights": true, "count": 230, "latest_doc_ts": 1787653760.124962, "ts": 1787653769.1040576}}
+{"ts": 1787653769.1040576, "iso": "2026-08-25T10:29:29", "step": "5_dns_cutover", "target": "b", "ok": true, "active_region": "b"}
+{"ts": 1787654061.7597966, "iso": "2026-08-25T10:34:21", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787654061.764519, "iso": "2026-08-25T10:34:21", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787654061.7597966, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787654061.76661, "iso": "2026-08-25T10:34:21", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787654062.7535455, "iso": "2026-08-25T10:34:22", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "reason": "ConnectError", "aborted": true}
+{"ts": 1787654186.9666455, "iso": "2026-08-25T10:36:26", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787654186.9666455, "iso": "2026-08-25T10:36:26", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787654186.9666455, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787654186.9666455, "iso": "2026-08-25T10:36:26", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787654187.9587426, "iso": "2026-08-25T10:36:27", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "reason": "ConnectError", "aborted": true}
+{"ts": 1787667844.1733365, "iso": "2026-08-25T14:24:04", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787667844.1783526, "iso": "2026-08-25T14:24:04", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787667844.1743448, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787667844.1808715, "iso": "2026-08-25T14:24:04", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787667845.1837718, "iso": "2026-08-25T14:24:05", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "reason": "ConnectError", "aborted": true}
+{"ts": 1787667988.6538963, "iso": "2026-08-25T14:26:28", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787667988.6548622, "iso": "2026-08-25T14:26:28", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787667988.6538963, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787667988.6558976, "iso": "2026-08-25T14:26:28", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787667989.643394, "iso": "2026-08-25T14:26:29", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "reason": "ConnectError", "aborted": true}
+{"ts": 1787668029.1329937, "iso": "2026-08-25T14:27:09", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787668029.1349995, "iso": "2026-08-25T14:27:09", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787668029.1339927, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787668029.1359992, "iso": "2026-08-25T14:27:09", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787668030.1388, "iso": "2026-08-25T14:27:10", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "reason": "ConnectError", "aborted": true}
+{"ts": 1787668255.02737, "iso": "2026-08-25T14:30:55", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787668255.0293696, "iso": "2026-08-25T14:30:55", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787668255.0283687, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787668255.030368, "iso": "2026-08-25T14:30:55", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787668256.0184388, "iso": "2026-08-25T14:30:56", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.0, "reason": "ConnectError", "aborted": true}
+{"ts": 1787670039.3299007, "iso": "2026-08-25T15:00:39", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787670039.3929584, "iso": "2026-08-25T15:00:39", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787670039.333726, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787670039.4041185, "iso": "2026-08-25T15:00:39", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787670039.1678987, "iso": "2026-08-25T15:00:39", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.01, "reason": "ConnectError", "aborted": true}
+{"ts": 1787670185.4015396, "iso": "2026-08-25T15:03:05", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787670185.4537666, "iso": "2026-08-25T15:03:05", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787670185.4051197, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787670185.4606144, "iso": "2026-08-25T15:03:05", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787670186.482935, "iso": "2026-08-25T15:03:06", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.02, "reason": "ConnectError", "aborted": true}
+{"ts": 1787670201.8321266, "iso": "2026-08-25T15:03:21", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787670201.866579, "iso": "2026-08-25T15:03:21", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787670201.8343246, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787670201.872488, "iso": "2026-08-25T15:03:21", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787670202.8840065, "iso": "2026-08-25T15:03:22", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.01, "reason": "ConnectError", "aborted": true}
+{"ts": 1787670228.6830893, "iso": "2026-08-25T15:03:48", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787670228.7328424, "iso": "2026-08-25T15:03:48", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787670228.685902, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787670228.7427664, "iso": "2026-08-25T15:03:48", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787670229.7579033, "iso": "2026-08-25T15:03:49", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.01, "reason": "ConnectError", "aborted": true}
+{"ts": 1787670235.136419, "iso": "2026-08-25T15:03:55", "step": "1_verify_target", "target": "b", "state": {"region": "b", "pool_state": "warm"}}
+{"ts": 1787670235.174039, "iso": "2026-08-25T15:03:55", "step": "2_restore_snapshot", "target": "b", "ok": true, "snapshot_at": 1787670235.1391323, "restored_at": null, "rpo_seconds": 90.14, "docs_lost": 45, "embed_model_version": "test"}
+{"ts": 1787670235.1809976, "iso": "2026-08-25T15:03:55", "step": "3_scale_pool", "target": "b", "from_state": "full", "to_state": "full"}
+{"ts": 1787670236.1950133, "iso": "2026-08-25T15:03:56", "step": "4_wait_ready", "target": "b", "ok": false, "waited_s": 1.01, "reason": "ConnectError", "aborted": true}
